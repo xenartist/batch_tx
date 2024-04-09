@@ -82,7 +82,7 @@ func (s *ServiceContext) SetFromAddresMap() {
 func (s *ServiceContext) SendEthtoAll() {
 
 	value := w3.I(s.Config.Eth.Value)
-	tipGasBigInt := w3.I("10 gwei")
+	tipGasBigInt := w3.I("12 gwei")
 	freeGasBigInt := w3.I("30 gwei")
 	signKey := s.AddressKey[s.AddrList[0]]
 	fromAddr := s.AddrList[0]
